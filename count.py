@@ -29,3 +29,11 @@ for i in y:
     else:
         continue
 print(count)
+
+# checking words starting with specific character or word
+str=input("enter your input")
+list=str.split(" ")
+char_find=input("enter your character to be find")
+for i in list:
+    if(i.startswith(char_find)==True):
+        print(i)
