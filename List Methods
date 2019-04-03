@@ -1,0 +1,66 @@
+m=[1,2,3,4]
+n=[3,4,5,6,7]
+
+#len()-to find the number of elements present in the list
+len(m)--->4
+len(n)-->5
+
+#count()-to find the number of occurrences of specified item in the list
+m.count(2)-->1
+
+#index()/find()-to find the index of occurrence of the specified item.
+m.index(3)--->2
+m.index(4)--->Error
+m.find(4)--->-1
+
+#append() -to add item at the end of the list.
+m.append(6)--->[1,2,3,4,6]
+
+#index()-To insert item at specified index position
+m.insert(1,22)--->[1,22,2,3,4]
+or
+m[1]==22
+
+#extend()-To add all items of one list to another list
+m.extend([33,34])--->[1,2,3,4,33,34]
+
+#remove()-to remove specified item from the list
+m.remove(33)--->[1,2,3,4,34]
+m.remove(54)--->Error
+
+#pop()-removes and returns the last element of the list.
+m.pop()--->[1,2,3,4]
+m.pop(2)-->[1,2,4,33]
+
+#reverse() order of elements of list.
+m.reverse()--->[33,4,2,1]
+
+#sort()-prints list in ascending/descending order
+a=[2,5,7,3,1,6]
+a.sort()--->[1,2,3,4,5,6] ascending
+a.sort(reverse=True)--->[6,5,4,3,2,1] descending
+
+#clear() function to remove all elements of List.
+a.clear()--->[]
+
+#finding common elememts in both lists
+x=[i for i in m if i in n]
+print(x)
+OUTPUT:[3,4]
+
+#finding not common elements in 1st list
+y=[i for i in m if i not in n]
+print(y)
+OUTPUT:[1,2]
+
+#coverting list to matrix
+a=[[1,2,3],[4,5,6],[7,8,9]]
+for i in range(len(a)):
+	for j in range(len(a[i])):
+		print(a[i][j],end=" ")
+	print()
+OUTPUT:
+1 2 3
+4 5 6
+7 8 9
+
