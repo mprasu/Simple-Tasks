@@ -1,0 +1,49 @@
+m=[1,2,3,4]
+n=[3,4,5,6,7]
+s1=set(m)
+s2=set(n)
+#union()-return all elements present in both sets
+s1.union(s2)
+print(s1)--->{1,2,3,4,5,6,7}
+
+#finding common elememts in both sets
+c=s1.intersection(s2)
+print(c)--->{3,4}
+
+#finding not common elements in 1st set
+d=s1.difference(s2)
+print(d)--->{1,2}
+
+d=s2.difference(s1)
+print(d)--->{5,6,7}
+
+#finding not common elements in both sets
+d1=symmetric_difference(s)
+print(d1)--->{1,2,5,6,7}
+
+#Adds item x to the set
+s1.add(7)
+print(s1)--->{1,2,3,4,7}
+
+#To add multiple items to the set.
+s1.update({8,9})
+print(s1)--->{1,2,3,4,7,8,9}
+
+#removes and returns some random element from the set.
+s1.pop()
+print(s1)--->{2,3,4,7,8,9}
+
+#remove()-removes specified element from the set and If the specified element not present in the Set then we will get KeyError.
+s1.remove(9)
+print(s1)--->{2,3,4,7,8}
+s1.remove(10)
+print(s1)--->Error
+
+#discard()-removes the specified element from the set.If the specified element not present in the set then we won't get any error.
+s1.discard(8)
+print(s1)--->{2,3,4,7}
+s1.remove(10)
+print(s1)--->{2,3,4,7,8}
+
+#clear()-To remove all elements from the Set.
+s1.clear()--->{}
