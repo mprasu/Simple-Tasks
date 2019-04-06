@@ -1,0 +1,10 @@
+#to findout occurence of each charcater
+a="welcome to python world"
+for i in a:
+	if i in d.keys():
+		d[i]+=1
+	else:
+		d[i]=1
+for k,v in d.items():
+	print("{}:{} times".format(k,v))
+  
